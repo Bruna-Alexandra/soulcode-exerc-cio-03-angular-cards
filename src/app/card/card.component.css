@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap');
+*{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bold;
+}
+
+mat-card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 254px;
+    width: 195px;
+    border-radius: 10px;
+}
+
+div mat-card {box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;;
+}
+mat-card-title{
+    font-size: 25px;
+}
+#price{
+    font-size: 40px;
+    font-weight: 900;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+mat-card-content *{
+    border-bottom: rgb(192, 189, 189) 1px solid;
+    width: 160px;
+    margin: 0;
+    padding: 5px 0 5px 0;
+    font-size: 15px;
+
+}
+
+
+button{
+    width: 160px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 15px;
+    font-weight: 700;
+    border: 1px grey solid;
+    color: #8d91ea;
+    cursor: pointer;
+}
+
+button:hover{
+    box-shadow: rgba(50, 50, 93, 0.10) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.1) 0px 18px 36px -18px inset;
+}

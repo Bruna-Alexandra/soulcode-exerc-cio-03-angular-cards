@@ -11,6 +11,7 @@
         </mat-card-header>
         <mat-card-content>
             <h2 id="price">
+                <span id="cifrao">$</span>
                 {{price}}
             </h2>
             <p>
@@ -23,7 +24,7 @@
                 {{content3}}
             </p>
         </mat-card-content>
-        <button [style]=
+        <button (click)="openSnackBar()" [style]=
         "'border:' + border + ';' +
         'color:' + butcolor + ';'">
         LEARN MORE

@@ -1,4 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-card',
@@ -28,5 +29,16 @@ export class CardComponent {
   index: string = '0';
   @Input()
   butcolor: string = "#8d91ea";
+
+  @Output()
+  btnClickEvent: EventEmitter<any> = new EventEmitter<any>()
+  emitirEvento(): void {
+    this.btnClickEvent.emit()
+  }
+
+  constructor(private _snackBar: MatSnackBar) { }
+  openSnackBar(): void{
+    this._snackBar.open("Pacote comprado", "Fechar")
+  }
 
 } 

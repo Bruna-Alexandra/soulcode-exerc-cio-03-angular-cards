@@ -1,27 +1,27 @@
 <div class="flex">
-<app-card 
+<app-card (btnClickEvent)="openSnackBar()"
 title="Basic"
-price="19.99"
+price="$19.99"
 content1="500 GB Storage"
 content2="2 Users Allowed"
 content3="Send up to 3 GB"
 ></app-card>
-<app-card
+<app-card (btnClickEvent)="openSnackBar()"
 size="284px"
 bg="#8d91ea"
 color="white"
 butcolor="white"
 border="white 1px solid"
 title="Professional"
-price="24.99"
+price="$24.99"
 content1="1 TB Storage"
 content2="5 Users Allowed"
 content3="Send up to 10 GB"
 index="10"
 ></app-card>
-<app-card 
+<app-card (btnClickEvent)="openSnackBar()"
 title="Master"
-price="39.99"
+price="$39.99"
 content1="2 TB Storage"
 content2="10 Users Allowed"
 content3="Send up to 20 GB"
